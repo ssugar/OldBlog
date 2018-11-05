@@ -41,3 +41,4 @@ Partner Rank = RANKX(ALL('Partner and Other'), [Total Trading Value])
 
 With the above 3 measures in place, we are now able to create a table that shows each trading partner, it's rank by trading value, and it's trading value:
 ![TotalAndRankMeasures](images/TotalAndRankMeasures.png)
+Note: The Partner_Description field used is from the "Partner and Other" calculated table
