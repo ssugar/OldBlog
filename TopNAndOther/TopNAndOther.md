@@ -78,4 +78,5 @@ Now we get to finally create our visualization.  For our axis, we're going to us
 Adding the "Partner Rank" measure as our tooltip will allow us to sort the chart by "Partner Rank" so our top categories will show up first, and our "Other" category will show up last.  To do that, make sure you sort the visualization by "Partner Rank" ascending.
 ![SortAscending](images/SortAscendingByPartnerRank.png)
 
-
+### Finished Product
+We now have all the measures and the visualization in place, and we are showing the Top N and Other in a bar chart.  To see this is Power BI Desktop, I've included the .pbix file [here](pbix/TopNAndOther.pbix)
