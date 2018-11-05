@@ -79,4 +79,4 @@ Adding the "Partner Rank" measure as our tooltip will allow us to sort the chart
 ![SortAscending](images/SortAscendingByPartnerRank.png)
 
 ### Finished Product
-We now have all the measures and the visualization in place, and we are showing the Top N and Other in a bar chart.  To see this is Power BI Desktop, I've included the .pbix file [here](pbix/TopNAndOther.pbix)
+We now have all the measures and the visualization in place, and we are showing the Top N and Other in a bar chart.  To see this is Power BI Desktop, I've included the .pbix file [here](https://github.com/ssugar/Blog/raw/master/TopNAndOther/pbix/TopNAndOther.pbix)
