@@ -23,6 +23,10 @@ Partner and Other = UNION(VALUES('US-Services-TradeData'[Partner_Description]), 
 This DAX expresssion creates a new table with all the trading partners, and an extra row at the end with a value of "Other"
 ![PartnerAndOther](images/Table-PartnerAndOther.png)
 
+### Create Relationship
+Once we've created the Calculated Table "Partner and Other", we next need to create a relationship between the Calculated Table and the original "US-Services-TradeData" table.  To do that, we click on Home > Manage Relationships in Power BI, and then click on Autodetect.  That should generate the relationship we need.
+![Relationship](images/Relationship.png)
+
 ### Create a Measure to Sum all Trading Value
 Our next step is to create a new Measure (Modeling > New Measure).  The DAX expression for this measure will be:
 
