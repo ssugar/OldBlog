@@ -8,10 +8,10 @@ We're going to use US services trade data to show how to get Top N and Other wor
 [full trade data](https://www.wto.org/english/res_e/statis_e/trade_datasets_e.htm)
 
 To reduce the overall size of the trade data we're working with, we've filtered the data taken from the site above down to just data reported by the US.  The actual CSV file we're going to be working with is located here:
-[US services trade data](exampledata/US-Services-TradeData.csv)
+[US services trade data](../exampledata/US-Services-TradeData.csv)
 
 ## Solution Walkthrough
-To build this solution, we've loaded the example data [US services trade data](exampledata/US-Services-TradeData.csv) into Power BI.  No further changes to this data have been made.
+To build this solution, we've loaded the example data [US services trade data](../exampledata/US-Services-TradeData.csv) into Power BI.  No further changes to this data have been made.
 
 ### Create a Calculated Table with Trade Partners and Other
 To start, we're going to create a Calculated Table (Modeling > New Table).  The DAX expression for this table will be:
@@ -21,7 +21,7 @@ Partner and Other = UNION(VALUES('US-Services-TradeData'[Partner_Description]), 
 ````
 
 This DAX expresssion creates a new table with all the trading partners, and an extra row at the end with a value of "Other"
-![PartnerAndOther](images/Table-PartnerAndOther.png)
+![PartnerAndOther](../images/Table-PartnerAndOther.png)
 
 ### Create a Measure to Sum all Trading Value
 Our next step is to create a new Measure (Modeling > New Measure).  The DAX expression for this measure will be:
@@ -40,5 +40,5 @@ Partner Rank = RANKX(ALL('Partner and Other'), [Total Trading Value])
 ````
 
 With the above 3 measures in place, we are now able to create a table that shows each trading partner, it's rank by trading value, and it's trading value:
-![TotalAndRankMeasures](images/TotalAndRankMeasures.png)
+![TotalAndRankMeasures](../images/TotalAndRankMeasures.png)
 Note: The Partner_Description field used is from the "Partner and Other" calculated table
