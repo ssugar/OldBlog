@@ -20,5 +20,5 @@ Partner and Other = UNION(VALUES('US-Services-TradeData'[Partner_Description]), 
 ````
 
 This DAX expresssion creates a new table with all the trading partners, and an extra row at the end with a value of "Other"
-![PartnerAndOther](images/Table-PartnerAndOther.png)
+![PartnerAndOther](images/Table-PartnerAndOther.png =775x729)
 
