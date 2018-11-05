@@ -63,16 +63,19 @@ Now we get to the meat of the solution.  We're going to create another DAX measu
 
 ````
 Top Trading Partner and Other = 
-//Set the number of items we want in the Top N
-var X = 10 
 //If a category is ranked within the Top N, give us the value for that category.
-return if([Partner Rank] <= X, [Total Trading Value],
+if([Partner Rank] <= [TopX], [Total Trading Value],
     //else we're outside the Top N, and we're looking at the "Other" category, aggregate the value for all categories outside the TopN
-	if(SELECTEDVALUE('Partner and Other'[Partner_Description]) = "Other", sumx(filter(all('Partner and Other'[Partner_Description]), [Partner Rank] > X),  [Total Trading Value])
+	if(SELECTEDVALUE('Partner and Other'[Partner_Description]) = "Other", sumx(filter(all('Partner and Other'[Partner_Description]), [Partner Rank] > [TopX]),  [Total Trading Value])
     )
 )
 ````
 
 ### Create a bar or column chart visualization
-Now we get to finally create our visualization.  For our axis, we're going to use "Partner_Description" from our "Partner and Other" calculated table.  Our value will be the "Top Trading Partner and Other" measure we created.  We're also going to add in "Partner Rank" as our tooltip.  This will allow us to sort the chart by "Partner Rank" so our top categories will show up first, and our "Other" category will show up last.  To do that, make sure you sort the visualization by "Partner Rank" ascending.  Finally, make sure set the Visual Level Filter with "Top Trading Partner and Other" > 0 so categories with no data don't show up.
+Now we get to finally create our visualization.  For our axis, we're going to use "Partner_Description" from our "Partner and Other" calculated table.  Our value will be the "Top Trading Partner and Other" measure we created.  We're also going to add in "Partner Rank" as our tooltip, and we'll set the Visual Level Filter for "Top Trading Partner and Other" to be greater than 0 so categories with no aggregated data don't show up.
+![BarChart](images/TopNAndOtherBarChart.png)
+
+Adding the "Partner Rank" measure as our tooltip will allow us to sort the chart by "Partner Rank" so our top categories will show up first, and our "Other" category will show up last.  To do that, make sure you sort the visualization by "Partner Rank" ascending.
+![SortAscending](images/SortAscendingByPartnerRank.png)
+
 
