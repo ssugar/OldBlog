@@ -1,7 +1,12 @@
 # PowerBI TopN and Other
 
 ## Problem Statement
-Power BI has the ability to display the Top N within a visualization by using a visual level "Top N" filter.  There currently (Nov 2018) isn't any built-in functionality to show the Top N and aggregate the rest of the categories under an "Other" category.  
+When adding a visualization to a report for a field that has lots of items, it can be useful to limit the visualization down to show only the top 5 or top 10 items.  We can do this by using Power BI's built in TopN visual level filter as shown here: 
+![BuiltInTopN](images/PowerBIBuiltInTopN.png)
+
+Sometimes though, especially when dealing with a field that has a few items with high values, and a lot of items with low values, it can be useful to show the top 5 or top 10 and then aggregate all other items into an "other" category.  While this is not currently (Nov 2018) possible using the built-in TopN functionality, it is asked for quite often, including in the comments of the orginal TopN request on [ideas.powerbi.com](https://ideas.powerbi.com/forums/265200-power-bi-ideas/suggestions/6515731-top-n-filters).  
+
+All that being said, just because this functionality isn't built into Power BI, that doesn't mean it's not possible.  With a bit of [DAX](https://docs.microsoft.com/en-us/dax/data-analysis-expressions-dax-reference), we are able to build our own "TopN and Other" functionality into any report.  Follow along with the rest of this article to find out how.
 
 ## Example Data
 We're going to use US services trade data to show how to get Top N and Other working in Power BI.  Data is taken from here:
