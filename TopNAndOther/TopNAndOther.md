@@ -48,6 +48,8 @@ Now we're going to create a measure, which is effectively going to be a variable
 TopX = 10
 ````
 
+Note: We're using TopX as the measure name because TopN is a reserved keyword in DAX, so we can't use that.
+
 ### Create a Measure to Rank all Trading Partners by Trading Value
 We'll now use our "Total Trading Value" measure to create a new Measure (Modeling > New Measure) to Rank all trading partners.  The DAX expression for this measure will be:
 
@@ -57,7 +59,7 @@ Partner Rank =
 IF(SELECTEDVALUE('Partner and Other'[Partner_Description]) = "Other", [TopX] + 1, RANKX(ALL('Partner and Other'), [Total Trading Value]))
 ````
 
-Note: If we don't set the "Other" categories rank, it will have a rank matching the lowest categories rank.
+Note: If we don't set the "Other" categories rank to TopX + 1 (like we do in the above DAX measure), it will have a rank matching the lowest categories rank.
 
 With the above measures and relationship in place, we are now able to create a table that shows each trading partner, it's rank by trading value, and it's trading value:
 ![TotalAndRankMeasures](images/TotalAndRankMeasures.png)
