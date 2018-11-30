@@ -1,5 +1,5 @@
 # MS Power BI TopN and Other
-by [Scott Sugar](https://linkedin.com/in/scottsugar)
+###### by [Scott Sugar](https://linkedin.com/in/scottsugar)
 
 ## Problem Statement
 When adding a visualization to a report for a field that has lots of items, it can be useful to limit the visualization down to show only the top 5 or top 10 items.  We can do this by using MS Power BI's built in TopN visual level filter as shown here: 
