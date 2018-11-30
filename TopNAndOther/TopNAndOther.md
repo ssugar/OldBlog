@@ -1,22 +1,22 @@
-# PowerBI TopN and Other
+# MS Power BI TopN and Other
 
 ## Problem Statement
-When adding a visualization to a report for a field that has lots of items, it can be useful to limit the visualization down to show only the top 5 or top 10 items.  We can do this by using Power BI's built in TopN visual level filter as shown here: 
+When adding a visualization to a report for a field that has lots of items, it can be useful to limit the visualization down to show only the top 5 or top 10 items.  We can do this by using MS Power BI's built in TopN visual level filter as shown here: 
 ![BuiltInTopN](images/PowerBIBuiltInTopN.png)
 
 Sometimes though, especially when dealing with a field that has a few items with high values, and a lot of items with low values, it can be useful to show the top 5 or top 10 and then aggregate all other items into an "other" category.  While this is not currently (Nov 2018) possible using the built-in TopN functionality, it is asked for quite often, including in the comments of the orginal TopN request on [ideas.powerbi.com](https://ideas.powerbi.com/forums/265200-power-bi-ideas/suggestions/6515731-top-n-filters).  
 
-All that being said, just because this functionality isn't built into Power BI, that doesn't mean it's not possible.  With a bit of [DAX](https://docs.microsoft.com/en-us/dax/data-analysis-expressions-dax-reference), we are able to build our own "TopN and Other" functionality into any report.  Follow along with the rest of this article to find out how.
+All that being said, just because this functionality isn't built into MS Power BI, that doesn't mean it's not possible.  With a bit of [DAX](https://docs.microsoft.com/en-us/dax/data-analysis-expressions-dax-reference), we are able to build our own "TopN and Other" functionality into any report.  Follow along with the rest of this article to find out how.
 
 ## Example Data
-We're going to use US services trade data to show how to get Top N and Other working in Power BI.  Data is taken from here:
+We're going to use US services trade data to show how to get Top N and Other working in MS Power BI.  Data is taken from here:
 [full trade data](https://www.wto.org/english/res_e/statis_e/trade_datasets_e.htm)
 
 To reduce the overall size of the trade data we're working with, we've filtered the data taken from the site above down to just data reported by the US.  The actual CSV file we're going to be working with is located here:
 [US services trade data](exampledata/US-Services-TradeData.csv)
 
 ## Solution Walkthrough
-To build this solution, we've loaded the example data [US services trade data](exampledata/US-Services-TradeData.csv) into Power BI.  No further changes to this data have been made.
+To build this solution, we've loaded the example data [US services trade data](exampledata/US-Services-TradeData.csv) into MS Power BI.  No further changes to this data have been made.
 
 ### Create a Calculated Table with Trade Partners and Other
 To start, we're going to create a Calculated Table (Modeling > New Table).  The DAX expression for this table will be:
@@ -29,7 +29,7 @@ This DAX expresssion creates a new table with all the trading partners, and an e
 ![PartnerAndOther](images/Table-PartnerAndOther.png)
 
 ### Create Relationship
-Once we've created the Calculated Table "Partner and Other", we next need to create a relationship between the Calculated Table and the original "US-Services-TradeData" table.  To do that, we click on Home > Manage Relationships in Power BI, and then click on Autodetect.  That should generate the relationship we need.
+Once we've created the Calculated Table "Partner and Other", we next need to create a relationship between the Calculated Table and the original "US-Services-TradeData" table.  To do that, we click on Home > Manage Relationships in MS Power BI, and then click on Autodetect.  That should generate the relationship we need.
 ![Relationship](images/Relationship.png)
 
 ### Create a Measure to Sum all Trading Value
@@ -86,4 +86,4 @@ Adding the "Partner Rank" measure as our tooltip will allow us to sort the chart
 ![SortAscending](images/SortAscendingByPartnerRank.png)
 
 ### Finished Product
-We now have all the measures and the visualization in place, and we are showing the Top N and Other in a bar chart.  To see this in Power BI Desktop, I've included the .pbix file [here](https://github.com/ssugar/Blog/raw/master/TopNAndOther/pbix/TopNAndOther.pbix)
+We now have all the measures and the visualization in place, and we are showing the Top N and Other in a bar chart.  To see this in MS Power BI Desktop, I've included the .pbix file [here](https://github.com/ssugar/Blog/raw/master/TopNAndOther/pbix/TopNAndOther.pbix)
