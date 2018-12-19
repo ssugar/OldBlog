@@ -1,21 +1,11 @@
 # MS Power BI Embedded
 ###### by [Scott Sugar](https://linkedin.com/in/scottsugar)
 
+### Problem Statement
+Your company has been using MS Power BI for a while, or you're just getting started on your data journey and you'd like to share your beautiful MS Power BI reports with your clients, or within your organization, but the cost of licensing every user with a Power BI Pro license is too great.
+
 ### What is MS Power BI Embedded
 MS Power BI Embedded is a service that allows you to embed Power BI reports within your own application, or within SharePoint or Microsoft Teams.  This allows you to connect to hundreds of data sources within Power BI, create beautiful and interactive visuals, dashboards, and reports and then embed those into other applications/websites with minimal code and development.
-
-### Use Cases
-* Share reports with customers who don't have PowerBI Pro licenses.
-* Embed a Power BI report in an application or website. 
-
-### Options
-There are 3 main series of SKUs available that allow embedding of reports:
-* PowerBI Premium P SKU
-* PowerBI Premium EM SKU
-* PowerBI Azure A SKU
-
-### Option Differences
-The main difference between the Premium P and the EM SKUs is that the EM SKU doesn't allow you to have users without a Power BI Pro license access content within the PowerBI.com service and via the PowerBI mobile application.  The Azure A SKU is further limited to just allow users without a Power BI Pro license to access content within an independent application (not within Microsoft service like SharePoint/Microsoft Teams), but being an Azure service, it does allow for hourly billing, and pausing/rapid scaling up and down of the service.  With the premium SKUs, a monthly/yearly commitment is required.  A full list of technical/purchasing differences can be found [here](https://docs.microsoft.com/en-us/power-bi/developer/embedded-faq#technical)     
 
 ### Get Started with MS Power BI Today
 There are so many things MS Power BI can do to increase data visibility and improve decision making within your organization. So, let’s recap a few important points about why you need MS Power BI in your organization.
