@@ -1,13 +1,19 @@
 # MS Power BI Embedded
 ###### by [Scott Sugar](https://linkedin.com/in/scottsugar)
 
-### Problem Statement
-Your team has built some beautiful MS Power BI reports, and you'd like to share those with your clients and/or vendors, but the cost of licensing all of your clients with a Power BI Pro license is too high.  Or you have a few dedicated MS Power BI report authors that would like to share the reports they've built with the rest of your company, but again the cost of licensing every user with a Power BI Pro license
+Where does MS Power BI Embedded fit in?  Your team has built some beautiful MS Power BI reports, and you'd like to share those with your clients and/or vendors outside of your organization, what are your options?
+1. Buy an MS Power BI Pro license for each report viewing user.
+2. MS Power BI Embedded.
 
 ### Decision Points
+So, how do I decide which option is best for me?  Here are a few questions to help you decide:
+* Are you sharing these reports with more than 70 users?
+* Are your reports only being viewed at certain times of the day/month/year?
+* Do you have a custom application that you'd like your reports to show up in?
+If you answered yes to any of the above, then MS Power BI Embedded is the right option for you.
 
 ### What is MS Power BI Embedded
-MS Power BI Embedded is a service that allows you to embed Power BI reports within your own application, or within SharePoint or Microsoft Teams.  This allows you to connect to hundreds of data sources within Power BI, create beautiful and interactive visuals, dashboards, and reports and then embed those into other applications/websites with minimal code and development.
+MS Power BI Embedded is a set of services that allows you to display Power BI reports within your own application, or even within SharePoint and/or Microsoft Teams.  This allows you to connect to hundreds of data sources within MS Power BI, create beautiful and interactive visuals, dashboards, and reports and then display those within other applications and websites with minimal code and development.
 
 ### Get Started with MS Power BI Today
 There are so many things MS Power BI can do to increase data visibility and improve decision making within your organization. So, let’s recap a few important points about why you need MS Power BI in your organization.
