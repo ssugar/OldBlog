@@ -10,6 +10,7 @@ So, how do you decide which option is best for you?  Here are a few questions to
 * Are you sharing your reports with more than 70 users?
 * Are your reports only being viewed at certain times of the day/month/year?
 * Do you have a custom application that you'd like your reports to show up in?
+
 If you answered yes to any of the above, then MS Power BI Embedded is the right option for you.
 
 ### What is MS Power BI Embedded?
