@@ -2,7 +2,9 @@
 ###### by [Scott Sugar](https://linkedin.com/in/scottsugar)
 
 ### Problem Statement
-Your company has been using MS Power BI for a while, or you're just getting started on your data journey and you'd like to share your beautiful MS Power BI reports with your clients, or within your organization, but the cost of licensing every user with a Power BI Pro license is too great.
+Your team has built some beautiful MS Power BI reports, and you'd like to share those with your clients and/or vendors, but the cost of licensing all of your clients with a Power BI Pro license is too high.  Or you have a few dedicated MS Power BI report authors that would like to share the reports they've built with the rest of your company, but again the cost of licensing every user with a Power BI Pro license
+
+### Decision Points
 
 ### What is MS Power BI Embedded
 MS Power BI Embedded is a service that allows you to embed Power BI reports within your own application, or within SharePoint or Microsoft Teams.  This allows you to connect to hundreds of data sources within Power BI, create beautiful and interactive visuals, dashboards, and reports and then embed those into other applications/websites with minimal code and development.
