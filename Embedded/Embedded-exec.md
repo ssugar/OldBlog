@@ -15,7 +15,7 @@ There are 3 different SKU series available for MS Power BI Embedded:
 * P-series SKU (Premium)
     - mainly for Enterprises that want a full featured Business Intelligence platform.  It is more expensive than the other options.
 * EM-series SKU (Embedded)
-    - similar to the P-series SKU, but you can't share content via the online Power BI service.  The lower tiers are currently difficult to purchase (requires a volume license agreement)
+    - similar to the P-series SKU, but you can't share content via the online Power BI service.  The lower tiers are currently difficult to purchase (requires a volume license agreement).
 * A-series SKU (Azure)
     - purchased via an Azure subscription.  Provides flexibile pause, scale-up, and scale-down functionality with no monthly or yearly commitment.  Can only embed within a custom application.
 
