@@ -45,7 +45,7 @@ To set up your Power BI embedding environment, go to: [https://app.powerbi.com/e
 7. Step 7 - Extract Sample App
     1. Click on the downloaded .zip file.
     2. Click Extract to unzip it.
-![ExtractFile](extract-file.png)
+![ExtractFile](images/extract-file.png)
 
 
 
