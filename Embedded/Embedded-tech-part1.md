@@ -15,24 +15,30 @@ For this series, we'll be focused on the PowerBI Embedded A-Series (Azure) SKU, 
 To set up your Power BI embedding environment, go to: [https://app.powerbi.com/embedsetup/AppOwnsData](https://app.powerbi.com/embedsetup/AppOwnsData).  Then run through the steps as described below:
 
 1. Step 1 - Sign in to Power BI
+    1. Sign in with an account used for the Power BI service.
+    2. Click Next
 ![SignIn](images/sign-in-powerbi.png)
-2. Step 2 - Click Next
 ![SignInNext](images/sign-in-next.png)
-3. Step 3 - Register Application.
+2. Step 2 - Register Application.
     1. First enter the name of the application.
     2. Next, select the access permissions.  For the purposes of this series, we only need to read reports, so we'll limit our access to just that.
     3. Finally, click "Register"
 ![RegisterApp](images/register-app.png)
-4. Step 4 - Create the Power BI App Workspace
+3. Step 3 - Create the Power BI App Workspace
     1. First enter the name of the app workspace.
     2. Click "Create app workspace"
 ![CreateWorkspace](images/create-workspace.png)
-5. Step 5 - Upload a sample Power BI Report
+4. Step 4 - Upload a sample Power BI Report
     1. Download this [.pbix file](https://github.com/ssugar/Blog/raw/master/Embedded/pbix/US%20Trade%20Data.pbix) that we'll use for this series of articles
     2. Select "Upload .pbix file"
     3. Browse to the location where you saved the [.pbix file](https://github.com/ssugar/Blog/raw/master/Embedded/pbix/US%20Trade%20Data.pbix)
     4. Click "Import"
 ![ImportContent](images/import-content.png)
+5. Step 5 - Grant Permissions
+    1. Click "Grant Permissions"
+![GrantPermissions](images/grant-permissions.png)
+
+
 
 ### Get Started with MS Power BI Today
 There are so many things MS Power BI can do to increase data visibility and improve decision making within your organization. So, let’s recap a few important points about why you need MS Power BI in your organization.
