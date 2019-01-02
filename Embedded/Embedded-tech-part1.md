@@ -18,6 +18,8 @@ To set up your Power BI embedding environment, go to: [https://app.powerbi.com/e
 ![SignIn](images/sign-in-powerbi.png)
 2. Step 2 - Click Next
 ![SignInNext](images/sign-in-next.png)
+3. Step 3 - Register Application
+![RegisterApp](images/register-app.png)
 
 ### Get Started with MS Power BI Today
 There are so many things MS Power BI can do to increase data visibility and improve decision making within your organization. So, let’s recap a few important points about why you need MS Power BI in your organization.
