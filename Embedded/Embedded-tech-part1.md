@@ -12,7 +12,7 @@ For this series, we'll be focused on the PowerBI Embedded A-Series (Azure) SKU, 
 
 ### Set up your Power BI embedding environment
 
-A great resource to walk you through setting up your PowerBI embedding environment can be found [here](https://app.powerbi.com/embedsetup/AppOwnsData).
+To set up your Power BI embedding environment, go to: [https://app.powerbi.com/embedsetup/AppOwnsData](https://app.powerbi.com/embedsetup/AppOwnsData).  Then run through the steps as described below:
 
 1. Step 1 - Sign in to Power BI
 ![SignIn](images/sign-in-powerbi.png)
