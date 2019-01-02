@@ -38,6 +38,7 @@ To set up your Power BI embedding environment, go to: [https://app.powerbi.com/e
     1. Click "Grant Permissions"
     ![GrantPermissions](images/grant-permissions.png)
     2. A pop-up window will appear, click "Accept"
+    
     ![GrantPermissions2](images/grant-permissions-2.png)
 6. Step 6 - Download Sample App
     1. Click "Download sample app"
