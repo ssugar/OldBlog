@@ -63,7 +63,7 @@ If all goes well, you should now have a report embedded into a custom .NET MVC w
 
 ### Up Next - Running the App in an Azure Web App and Setting up Authentication
 
-[Part 2](Embedded-tech-part2) will show us how to run this custom .NET MVC web app in an Azure Web App and setting up authentication, which will set us up nicely for part 3 of this series which will be about setting up Row Level Security.
+[Part 2](Embedded-tech-part2.md) will show us how to run this custom .NET MVC web app in an Azure Web App and setting up authentication, which will set us up nicely for part 3 of this series which will be about setting up Row Level Security.
 
 ### Get Started with MS Power BI Today
 There are so many things MS Power BI can do to increase data visibility and improve decision making within your organization. So, let’s recap a few important points about why you need MS Power BI in your organization.
