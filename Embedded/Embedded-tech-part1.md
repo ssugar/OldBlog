@@ -26,11 +26,13 @@ To set up your Power BI embedding environment, go to: [https://app.powerbi.com/e
 4. Step 4 - Create the Power BI App Workspace
     1. First enter the name of the app workspace.
     2. Click "Create app workspace"
+![CreateWorkspace](images/create-workspace.png)
 5. Step 5 - Upload a sample Power BI Report
     1. Download this [.pbix file](https://github.com/ssugar/Blog/raw/master/Embedded/pbix/US%20Trade%20Data.pbix) that we'll use for this series of articles
     2. Select "Upload .pbix file"
     3. Browse to the location where you saved the [.pbix file](https://github.com/ssugar/Blog/raw/master/Embedded/pbix/US%20Trade%20Data.pbix)
     4. Click "Import"
+![ImportContent](images/import-content.png)
 
 ### Get Started with MS Power BI Today
 There are so many things MS Power BI can do to increase data visibility and improve decision making within your organization. So, let’s recap a few important points about why you need MS Power BI in your organization.
