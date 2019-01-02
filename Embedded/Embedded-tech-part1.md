@@ -14,8 +14,10 @@ For this series, we'll be focused on the PowerBI Embedded A-Series (Azure) SKU, 
 
 A great resource to walk you through setting up your PowerBI embedding environment can be found [here](https://app.powerbi.com/embedsetup/AppOwnsData).
 
-* Step 1 - Sign in to Power BI
+1. Step 1 - Sign in to Power BI
 ![SignIn](images/sign-in-powerbi.png)
+2. Step 2 - Click Next
+![SignInNext](images/sign-in-next.png)
 
 ### Get Started with MS Power BI Today
 There are so many things MS Power BI can do to increase data visibility and improve decision making within your organization. So, let’s recap a few important points about why you need MS Power BI in your organization.
