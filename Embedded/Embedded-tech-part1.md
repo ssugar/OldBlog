@@ -51,6 +51,16 @@ To set up your Power BI embedding environment, go to: [https://app.powerbi.com/e
     2. Click on the Web.config file
     3. Enter the password for the account used to sign into Power BI
 ![EnterPassword](images/enter-password.png)
+9. Step 9 - Run Solution and Embed Report
+    1. Click on the Run button in Visual Studio
+    2. Click on "Embed Report" in the browser window
+![RunSolution](images/run-solution.png)
+![EmbedReport](images/embed-report.png)
+
+If all goes well, you should now have a report embedded into a custom .NET MVC web application running on the localhost of your computer like in the image below:
+![Success](images/success.png)
+
+
 
 
 
