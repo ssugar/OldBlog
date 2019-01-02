@@ -61,7 +61,7 @@ To set up your Power BI embedding environment, go to: [https://app.powerbi.com/e
 If all goes well, you should now have a report embedded into a custom .NET MVC web application running on the localhost of your computer like in the image below:
 ![Success](images/success.png)
 
-### Part 2 - Running the App in an Azure Web App and Setting up Authentication
+### Up Next - Running the App in an Azure Web App and Setting up Authentication
 
 [Part 2](Embedded-tech-part2) will show us how to run this custom .NET MVC web app in an Azure Web App and setting up authentication, which will set us up nicely for part 3 of this series which will be about setting up Row Level Security.
 
