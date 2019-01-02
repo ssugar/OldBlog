@@ -16,9 +16,9 @@ To set up your Power BI embedding environment, go to: [https://app.powerbi.com/e
 
 1. Step 1 - Sign in to Power BI
     1. Sign in with an account used for the Power BI service.
+    ![SignIn](images/sign-in-powerbi.png)
     2. Click Next
-![SignIn](images/sign-in-powerbi.png)
-![SignInNext](images/sign-in-next.png)
+    ![SignInNext](images/sign-in-next.png)
 2. Step 2 - Register Application.
     1. First enter the name of the application.
     2. Next, select the access permissions.  For the purposes of this series, we only need to read reports, so we'll limit our access to just that.
@@ -36,9 +36,9 @@ To set up your Power BI embedding environment, go to: [https://app.powerbi.com/e
 ![ImportContent](images/import-content.png)
 5. Step 5 - Grant Permissions
     1. Click "Grant Permissions"
+    ![GrantPermissions](images/grant-permissions.png)
     2. A pop-up window will appear, click "Accept"
-![GrantPermissions](images/grant-permissions.png)
-![GrantPermissions2](images/grant-permissions-2.png)
+    ![GrantPermissions2](images/grant-permissions-2.png)
 6. Step 6 - Download Sample App
     1. Click "Download sample app"
 ![DownloadApp](images/download-sample-app.png)
@@ -53,17 +53,16 @@ To set up your Power BI embedding environment, go to: [https://app.powerbi.com/e
 ![EnterPassword](images/enter-password.png)
 9. Step 9 - Run Solution and Embed Report
     1. Click on the Run button in Visual Studio
+    ![RunSolution](images/run-solution.png)
     2. Click on "Embed Report" in the browser window
-![RunSolution](images/run-solution.png)
-![EmbedReport](images/embed-report.png)
+    ![EmbedReport](images/embed-report.png)
 
 If all goes well, you should now have a report embedded into a custom .NET MVC web application running on the localhost of your computer like in the image below:
 ![Success](images/success.png)
 
+### Part 2 - Running the App in an Azure Web App and Setting up Authentication
 
-
-
-
+[Part 2](Embedded-tech-part2) will show us how to run this custom .NET MVC web app in an Azure Web App and setting up authentication, which will set us up nicely for part 3 of this series which will be about setting up Row Level Security.
 
 ### Get Started with MS Power BI Today
 There are so many things MS Power BI can do to increase data visibility and improve decision making within your organization. So, let’s recap a few important points about why you need MS Power BI in your organization.
