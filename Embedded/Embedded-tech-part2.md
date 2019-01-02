@@ -1,7 +1,7 @@
 # MS Power BI Embedded - Azure Web App and Authentication
 ###### by [Scott Sugar](https://linkedin.com/in/scottsugar)
 
-This is the second of a 3-part series on PowerBI Embedded.  This series is meant for a technical audience.  The first part of this series is [here](./Embedded-tech-part1.md).  It's highly recommended to read part 1 before you start on part 2.  An executive-focused article on PowerBI Embedded can be found [here](./Embedded-exec.md).
+This is the second of a 3-part series on PowerBI Embedded.  This series is meant for a technical audience.  It's highly recommended to read part [1](./Embedded-tech-part1.md) before you start on part 2.  An executive-focused article on PowerBI Embedded can be found [here](./Embedded-exec.md).
 
 ### Get Started with MS Power BI Today
 There are so many things MS Power BI can do to increase data visibility and improve decision making within your organization. So, let’s recap a few important points about why you need MS Power BI in your organization.
