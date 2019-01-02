@@ -46,6 +46,11 @@ To set up your Power BI embedding environment, go to: [https://app.powerbi.com/e
     1. Click on the downloaded .zip file.
     2. Click Extract to unzip it.
 ![ExtractFile](images/extract-file.png)
+8. Step 8 - Open Solution and Enter Password into Web.config
+    1. Open up the extracted Visual Studio solution file into Visual Studio
+    2. Click on the Web.config file
+    3. Enter the password for the account used to sign into Power BI
+![EnterPassword](images/enter-password.png)
 
 
 
