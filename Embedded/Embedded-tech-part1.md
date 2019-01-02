@@ -1,7 +1,7 @@
-# MS Power BI Embedded
+# MS Power BI Embedded - Creating a Custom .NET MVC App
 ###### by [Scott Sugar](https://linkedin.com/in/scottsugar)
 
-This is the first of a 3-part series on PowerBI Embedded.  This series is meant for a technical audience.  An executive-focused article on PowerBI Embedded can be found [here](./Embedded-exec.md)
+This is the first of a 3-part series on PowerBI Embedded.  This series is meant for a technical audience.  An executive-focused article on PowerBI Embedded can be found [here](./Embedded-exec.md).
 
 ### Get Started with MS Power BI Today
 There are so many things MS Power BI can do to increase data visibility and improve decision making within your organization. So, let’s recap a few important points about why you need MS Power BI in your organization.
