@@ -31,7 +31,6 @@ If you answered yes to any of the above, then MS Power BI Dataflows is the right
 ---
 **Note**
 As of Feb 2019, Power BI Dataflows is still in Public Preview, and therefore should not be used in production until General Availability is released.
-
 ---
 
 ### Get Started with MS Power BI Dataflows Today
