@@ -17,7 +17,7 @@ Power BI Dataflows helps bridge that gap, allowing you to retrieve, prepare, and
 * Provide a consistent "single source of truth" across your organization to build reports and visualizations on top of.
 * Integrated [Common Data Model](https://docs.microsoft.com/en-us/common-data-model/) schemas provide the ability to map your organizations data to the Common Data Model quickly and easily.
 
-The official Microsoft introduction blog posting for [Power BI Dataflows](https://powerbi.microsoft.com/en-us/blog/introducing-power-bi-data-prep-wtih-dataflows/) which also contains information on some of the advanced functionality available within Power BI dataflows - specifically linked entities, and computed entities.
+The official Microsoft introduction blog posting for [Power BI Dataflows](https://powerbi.microsoft.com/en-us/blog/introducing-power-bi-data-prep-wtih-dataflows/) also contains information on some of the advanced functionality available within Power BI dataflows - specifically linked entities, and computed entities.
 
 ### Deciding if Power BI Dataflows is Right For You
 Here are a few questions to help you decide if MS Power BI Dataflows is the right move for your organization:
