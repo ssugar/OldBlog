@@ -25,7 +25,7 @@ Here are a few questions to help you decide if MS Power BI Dataflows is the righ
 * Do you want to have multiple team members collaborate on the retreival and preparation of data.
 
 ---
-**Public Preview Warning** ![warning](images/warning.png)
+![warning](images/warning.png) **Public Preview Warning** 
 
 At the time of writing this article (Feb, 2019) Power BI Dataflows functionality is still in Public Preview, which means that functionality could be added or removed prior to release to General Availability.  This should not be used in production until it is released to General Availability.
 
