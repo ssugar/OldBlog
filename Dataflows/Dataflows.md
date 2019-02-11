@@ -28,6 +28,7 @@ Here are a few questions to help you decide if MS Power BI Dataflows is the righ
 * Do you want to have multiple team members collaborate on the retreival and preparation of data.
 
 If you answered yes to any of the above, then MS Power BI Dataflows is the right option for you.
+
 ---
 **Note**
 
