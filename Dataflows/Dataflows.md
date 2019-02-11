@@ -1,24 +1,35 @@
 # MS Power BI Dataflows
 ###### by [Scott Sugar](https://linkedin.com/in/scottsugar)
 
-## Problem Statement
-When adding a visualization to a report for a field that has lots of items, it can be useful to limit the visualization down to show only the top 5 or top 10 items.  We can do this by using MS Power BI's built in TopN visual level filter as shown here: 
-![BuiltInTopN](images/PowerBIBuiltInTopN.png)
+You've built a few Power BI reports based on data from your CRM/ERP, and you've noticed a few things along the way.  One of those things is the duplication of data retreival across the various Power BI reports.  A common example of this is your customer records - Your Sales report, and your Quality of Service report, and almost all your other reports are pulling in your list of clients from your CRM/ERP backend.  This isn't a big problem while creating your first few reports, but what happens as you continue to create additional reports?, or as you provide self-serve reporting to your end-users?  If you continue to scale up the number of reports you have, you may have so many duplicate data pulls that you slow down your CRM/ERP backend.
 
-Sometimes though, especially when dealing with a field that has a few items with high values, and a lot of items with low values, it can be useful to show the top 5 or top 10 and then aggregate all other items into an "other" category.  While this is not currently (Nov 2018) possible using the built-in TopN functionality, it is asked for quite often, including in the comments of the orginal TopN request on [ideas.powerbi.com](https://ideas.powerbi.com/forums/265200-power-bi-ideas/suggestions/6515731-top-n-filters).  
+Another issue is one of consistency.  If you have multiple reports pulling your client list (or your sales transactions) at different times of the day, or in a slightly different way, will the data be consistent across all your reports?
 
-All that being said, just because this functionality isn't built into MS Power BI, that doesn't mean it's not possible.  With a bit of [DAX](https://docs.microsoft.com/en-us/dax/data-analysis-expressions-dax-reference), we are able to build our own "TopN and Other" functionality into any report.  Follow along with the rest of this article to find out how.
+The traditional solution to these problems is to have "staged" data utilizing a data lake (structured & unstructured data) and/or a data warehouse (structured) as your central data repository, your "single source of truth".  For many SMEs this is the ideal solution, but perceived and actual costs of creating, managing, and securing a data lake are oten an impediment to getting to this level of sophistication.
 
-## Solution Walkthrough
-To build this solution, we've loaded the example data [US services trade data](exampledata/US-Services-TradeData.csv) into MS Power BI.  No further changes to this data have been made.
+Power BI Dataflows helps bridge that gap, allowing you to retreive and schedule retrieval of data utilizing the familiar Power BI "Get Data" interface, and store it in a data lake (Azure Data Lake Storage) accessible by Power BI without the complexity of setting up, managing, or securing a data lake. 
 
+### So, What are MS Power BI Dataflows?
+MS Power BI Embedded is a set of services that allow you to display Power BI reports, dashboards, or just single visualizations within your own application, or even within SharePoint and/or Microsoft Teams.  This means that you can connect to hundreds of Cloud and on-premises data sources within MS Power BI, create appealing and interactive visuals, dashboards, and reports, and then display those within your organizations applications and websites with minimal code and development.
 
-### Finished Product
-We now have all the measures and the visualization in place, and we are showing the Top N and Other in a bar chart.  To see this in MS Power BI Desktop, I've included the .pbix file [here](https://github.com/ssugar/Blog/raw/master/TopNAndOther/pbix/TopNAndOther.pbix)
+### Different MS Power BI Dataflows Options
+There are 3 different SKU series available for MS Power BI Embedded:
+* P-series SKU (Premium)
+    - mainly for Enterprises that want a full featured Business Intelligence platform.  It is more expensive than the other options.
+* EM-series SKU (Embedded)
+    - similar to the P-series SKU, but you can't share content via the online Power BI service.  The lower tiers are currently difficult to purchase (requires a volume license agreement).
+* A-series SKU (Azure)
+    - purchased via an Azure subscription.  Provides flexibile pause, scale-up, and scale-down functionality with no monthly or yearly commitment.  Can only embed within a custom application.
 
-### Get Started with MS Power BI Today
-There are so many things MS Power BI can do to increase data visibility and improve decision making within your organization. So, let’s recap a few important points about why you need MS Power BI in your organization.
+Click [here](https://docs.microsoft.com/en-us/power-bi/developer/embedded-faq#technical) for a full breakdown of the different features available for each SKU series.
 
-MS Power BI is data import, modeling, and visualization made easier.  It can be a self-service data visualization tool for your end-users, or we can help build reports and dashboards for you.  MS Power BI has desktop and mobile clients - even for Apple Watch - along with web-based dashboards and reports, making your data and KPIs easy to access from any device at any time.
+### Deciding if Power BI Dataflows is Right For You
+Here are a few questions to help you decide if MS Power BI Embedded is the right move for your organization:
+* Are you sharing your reports with more than 70 users?
+* Are your reports only being viewed at certain times of the day/month/year?
+* Do you have a custom application that you'd like your reports to show up in?
 
-Simply put, MS Power BI is an extremely versatile Business Intelligence platform. If you want to learn more about how to take full advantage of MS Power BI, [drop us a line today](mailto:cloud@proserveit.com?Subject=I%20Want%20To%20Learn%20More%20About%20Power%20BI%20Solutions). Our team of Data & Analytics experts will be happy to schedule a demo or a tutorial session.
+If you answered yes to any of the above, then MS Power BI Embedded is the right option for you.
+
+### Get Started with MS Power BI Dataflows Today
+If your answers to the questions in the decision points above lead you to believe that Power BI Embedded is right for your organization, or if you just want to learn more about Power BI Embedded, [drop us a line today](mailto:cloud@proserveit.com?Subject=I%20Want%20To%20Learn%20More%20About%20Power%20BI%20Embedded). Our team of Data & Analytics experts will be happy to schedule a demo or a tutorial session.
