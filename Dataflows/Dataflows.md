@@ -15,8 +15,9 @@ Power BI Dataflows helps bridge that gap, allowing you to retrieve, prepare, and
 * Enable team collaboration while building your organizations data retrieval and preparation processes.
 * Eliminate duplication of data retrieval processes ensuring data retrieval has a minimal and consistent impact on your applications.
 * Provide a consistent "single source of truth" across your organization to build reports and visualizations on top of.
+* Integrated [Common Data Model](https://docs.microsoft.com/en-us/common-data-model/) schemas provide the ability to map your organizations data to the Common Data Model quickly and easily.
 
-Click [here](https://powerbi.microsoft.com/en-us/blog/introducing-power-bi-data-prep-wtih-dataflows/) for the official Microsoft introduction blog posting for Power BI Dataflows which also contains information on some of the advanced functionality available within Power BI dataflows - specifically linked entities, and computed entities.
+The official Microsoft introduction blog posting for [Power BI Dataflows](https://powerbi.microsoft.com/en-us/blog/introducing-power-bi-data-prep-wtih-dataflows/) which also contains information on some of the advanced functionality available within Power BI dataflows - specifically linked entities, and computed entities.
 
 ### Deciding if Power BI Dataflows is Right For You
 Here are a few questions to help you decide if MS Power BI Dataflows is the right move for your organization:
