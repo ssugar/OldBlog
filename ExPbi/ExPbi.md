@@ -1,10 +1,24 @@
-# Excel and MS Power BI
+# Excel and MS Power BI - 
 ###### by [Scott Sugar](https://linkedin.com/in/scottsugar)
 
-We're doing our reporting in Excel.  We'd like to move it to Power BI
+When comparing different tools, it's often useful to try and understand the intended purpose of the tools.  Microsoft Excel - created in 1987, it is a traditional spreadsheet application.  Given it's long-life, it has a vast array of features and most business users feel comfortable using it.  As a traditional spreadsheet, it allows users to reference specific cells (or groups of cells), and do a variety of calculations (simple and complex).  Without complex lookups or add-ons, it is difficult to build relationships with other tables/data sources, we're essentially dealing with a series of unrelated tables.  Power BI is relatively new (July 2015), and is focused on data ingestion, easily building relationships between data sets, alerting, and publishing/sharing reports and dashboards.
 
 ### Some benefits of using MS Power BI 
-* 
+* Scalability
+
+Have you tried to open up a 50 MB CSV file in Excel?
+
+* Repeatability
+* Maintainability
+* Cross Filtering in Reports
+* Report Sharing and Distribution
+* Relationships between datasets
+
+* Tabular style reports - Excel is better
+
+* Power BI Export to Excel, why?
+    * Data exploration can be easier within Excel (arrow keys to move around data)
+
 
 
 ### Deciding if Power BI is Right For You
