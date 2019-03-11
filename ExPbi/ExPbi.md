@@ -1,9 +1,9 @@
-# Excel and MS Power BI
+# Excel and MS Power BI: A Comparison
 ###### by [Scott Sugar](https://linkedin.com/in/scottsugar)
 
-When comparing different tools, it's often useful to try and understand the intended purpose of each tool.  Microsoft Excel - created in 1987, was created as a traditional spreadsheet application.  Given it's long life, it has a vast array of features and most business users feel very comfortable using it.  As a traditional spreadsheet, it allows users to reference specific cells (or groups of cells), and do a variety of calculations (simple and complex).  That being said, without complex lookups, add-ons, or manual copy/paste it is difficult to build relationships with other tables/data sources, so we're essentially dealing with a series of unrelated tables.  Power BI is relatively new (July 2015), and is focused on data ingestion, easily building relationships between data sets, alerting, and publishing/sharing reports and dashboards.
+When comparing different tools, it's often useful to try and understand the intended purpose of each tool.  Microsoft Excel - created in 1987, was created as a traditional spreadsheet application.  As a traditional spreadsheet, it allows users to reference specific cells (or groups of cells), and do a variety of calculations (simple and complex).  Given it's long life, it has a vast array of features and most business users feel very comfortable using it.  That being said, without complex lookups, add-ons, or manual copy/paste it is difficult to build relationships with other tables/data sources, so we're typically limited to working with a series of disconnected tables.  Power BI is relatively new (July 2015), and is focused on data ingestion, easily building relationships between data sets, alerting, and publishing/sharing reports and dashboards.
 
-### Common Scenario
+### Example Scenario
 
 You've been tasked with creating a new sales report.  You open up your CRM, export your closed deals to CSV, and open it up in Excel.  A bit of cleanup, a few formulas, format as table, a quick chart, save as an excel workbook, and things are looking good.  You can see a customer id number, the deal name, the date the deal closed, projected and actual revenue, and time and material costs.  You send it to your boss - they love it, "great work! now can we see a sales total by customer name?  I only see a customer id number".  
 
