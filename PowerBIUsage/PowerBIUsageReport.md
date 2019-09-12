@@ -28,15 +28,43 @@ We have a few things we need to set up in order to get this solution working:
    * A) Enter Application Name
    * B) Select Supported Acccount Types (default is fine if just gather activity logs for one tenant)
    * C) Click Register
+
 ![Step2](images/AAD-Step2.png)
+
+3. Add API Permissions
+   * A) Click API Permissions
+   * B) Click "Add a permission"
+   * C) Click "Office 365 Management APIs"
 
 ![Step3](images/AAD-Step3.png)
 
+4. Request API Permissions
+   * A) Click "Application Permissions"
+   * B) Select ActivityFeed.Read
+   * C) Select ServiceHealth.Read
+   * D) Click "Add permissions"
+
 ![Step4](images/AAD-Step4.png)
+
+5. Gather Application (client) ID, and Directory (tenant) ID
+   * A) Click Overview
+   * B) Copy the Application ID and Directory ID into notepad for use later
 
 ![Step5](images/AAD-Step5.png)
 
+6. Create Client secret
+   * A) Click Certificates and Secrets
+   * B) Click New client secret
+   * C) Enter a description
+   * D) Click "Add"
+
 ![Step6](images/AAD-Step6.png)
+
+7. Gather Client secret
+   * A) Copy the Client secret into notepad for use later
+   
+![Step7](images/AAD-Step7.png)
+
 
 #### Power BI Streaming DataSet
 
