@@ -62,23 +62,48 @@ We have a few things we need to set up in order to get this solution working:
 
 7. Gather Client secret
    * A) Copy the Client secret into notepad for use later
-   
+
 ![Step7](images/AAD-Step7.png)
 
 
 #### Power BI Streaming DataSet
 
+1. Create Streaming dataset
+   * A) Click +Create
+   * B) Click on Streaming dataset
+
 ![Step1](images/PBI-Step1.png)
+
+2. Select data source
+   * A) Select API
+   * B) Click Next
 
 ![Step2](images/PBI-Step2.png)
 
+3. Enter dataset and field names
+   * A) Enter a dataset name
+   * B) Fill in the "Values from stream" section as per the screenshot below.
+   * Note: CreationTime is type DateTime, everything else is text.
+
 ![Step3](images/PBI-Step3.png)
 
+4. Turn on historical data analysis and create the dataset
+   * A) Scroll down
+   * B) Enable "Historical data analysis"
+   * C) Click Create
+
 ![Step4](images/PBI-Step4.png)
+
+5. Gather PowerShell Code
+   * A) Click on PowerShell
+   * B) Copy the endpoint URL to notepad for use later
+   * C) Click Done
 
 ![Step5](images/PBI-Step5.png)
 
 ### Get-PowerBIUsage Script
+
+
 
 #### Update Script
 
