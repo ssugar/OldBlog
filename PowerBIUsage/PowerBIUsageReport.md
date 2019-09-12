@@ -107,9 +107,28 @@ The PowerShell script we'll use to grab the activity logs from the O365 Manageme
 
 #### Update Script
 
+Before trying to run the script, please update the variables at the top of the script with the values we copied into notepad
+
+![UpdateScript](images/UpdateCode.png)
+
 #### Run Script
 
+To start, you'll need to "create a subscription" so the Management API will start to save your tenant's activities for later retrieval.
+
+```` 
+.\Get-PowerBIUsage.ps1 -startSubscription
+````
+
 #### Loop Script
+
+The code below will continue to look for available activity logs every 15 minutes and push them into to the streaming dataset.
+
+````
+while($true){
+  $x = .\Get-PowerBIUsage.ps1
+  Start-Sleep -Seconds 900
+}
+````
 
 ### Create Power BI Report
 
