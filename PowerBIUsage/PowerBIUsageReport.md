@@ -18,8 +18,15 @@ We have a few things we need to set up in order to get this solution working:
 
 #### Azure AD Application
 
+1. Login to Azure AD Admin Portal and Create a new Azure AD Application
+    A. Click App Registrations
+    B. Click New Registration
 ![Step1](images/AAD-Step1.png)
 
+2. Register Azure AD Application
+    A. Enter Application Name
+    B. Select Supported Acccount Types (default is fine if just gather activity logs for one tenant)
+    C. Click Register
 ![Step2](images/AAD-Step2.png)
 
 ![Step3](images/AAD-Step3.png)
@@ -29,8 +36,6 @@ We have a few things we need to set up in order to get this solution working:
 ![Step5](images/AAD-Step5.png)
 
 ![Step6](images/AAD-Step6.png)
-
-![Step7](images/AAD-Step7.png)
 
 #### Power BI Streaming DataSet
 
