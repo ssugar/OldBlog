@@ -11,3 +11,6 @@
     * [Dataflows](Dataflows/Dataflows.md)
 * Excel and PowerBI
     * [ExPbi](ExPbi/ExPbi.md)
+* PowerBI Usage Report
+    * [PowerBI Usage Report](PowerBIUsage/PowerBIUsageReport.md)
+
