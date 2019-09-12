@@ -115,7 +115,7 @@ Before trying to run the script, please update the variables at the top of the s
 
 To start, you'll need to "create a subscription" so the Management API will start to save your tenant's activities for later retrieval.
 
-```` 
+```` powershell
 .\Get-PowerBIUsage.ps1 -startSubscription
 ````
 
@@ -123,9 +123,9 @@ To start, you'll need to "create a subscription" so the Management API will star
 
 The code below will continue to look for available activity logs every 15 minutes and push them into to the streaming dataset.
 
-````
+```` powershell
 while($true){
-  $x = .\Get-PowerBIUsage.ps1
+  .\Get-PowerBIUsage.ps1
   Start-Sleep -Seconds 900
 }
 ````
