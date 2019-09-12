@@ -103,7 +103,7 @@ We have a few things we need to set up in order to get this solution working:
 
 ### Get-PowerBIUsage Script
 
-
+The PowerShell script we'll use to grab the activity logs from the O365 Management API and load the results into a Power BI Streaming Dataset can be found [here](Scripts/Get-PowerBIUsage.ps1)
 
 #### Update Script
 
