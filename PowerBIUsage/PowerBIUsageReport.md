@@ -16,7 +16,7 @@ We have a few things we need to set up in order to get this solution working:
 * Azure AD Application - to help us authenticate to the O365 Management APIs
 * Power BI Streaming Dataset - to hold the Power BI activity logs
 
-#### Azure AD Application
+#### Create an Azure AD Application
 
 1. Login to Azure AD Admin Portal and Create a new Azure AD Application
    * A) Click App Registrations
@@ -66,7 +66,7 @@ We have a few things we need to set up in order to get this solution working:
 ![Step7](images/AAD-Step7.png)
 
 
-#### Power BI Streaming DataSet
+#### Create Power BI Streaming Dataset
 
 1. Create Streaming dataset
    * A) Click +Create
@@ -132,7 +132,7 @@ while($true){
 
 ### Create Power BI Report
 
-At this point, you can start creating your Power BI report and answering some of the questions we had before.  As a start, let's look at what the most popular reports are:
+At this point, you can start creating your Power BI report and answering some of the questions we had before.  As a start, let's look at what the most popular reports are in our tenant:
 
 1. Create report
    * A) Click on Datasets
@@ -140,15 +140,15 @@ At this point, you can start creating your Power BI report and answering some of
 
 ![ReportStep1](images/Report-Method1Step1.png)
 
-2. Create visualization
+2. Create Top Operations by Report Name visualization
    * A) Click on the "Stacked bar chart" visualization
    * B) Drag-and-drop Report Name into the Axis
    * C) Drag-and-drop Operation into the Value (will become count of operation)
 
 ![ReportStep2](images/Report-Method1Step2.png)
 
-With the above in place, we can see that our "Revenue by Sales Rep v3" report is our most popular report.  From there, we can add slicers and other visualizations or tables to continue to delve into our tenant's Power BI usage.
+With the above in place, we can see that our "Revenue by Sales Rep v3" report is our most used (i.e. popular) report.  From there, we can add slicers and other visualizations or tables to continue to delve into our tenant's Power BI usage and find out "who's using the service, and what are they looking at?".
 
 ## Thoughts and Next Steps
 
-This was a quick introduction to Azure AD Application authentication to the O365 Management Activity API, and to loading Power BI activity data into a Power BI streaming dataset.  With some work, this could be expanded to capture other O365 activity data (Exchange, Sharepoint, Teams, DLP, ...), and could be used to save activity log information to long term storage (instead of a streaming dataset).  Let us know what you're interested in, and that will help us tailor our future technical blog postings.  As always, if you have any issues, or would like to ask us any questions, please [reach out to us](mailto:cloud@proserveit.com?Subject=I%20Want%20To%20Learn%20More%20About%20Power%20BI%20Solutions).
+This was a quick introduction to Azure AD Application authentication to the O365 Management Activity API, and to loading Power BI activity data into a Power BI streaming dataset.  With some work, this could be expanded to capture other O365 activity data (Exchange, Sharepoint, Teams, DLP, ...), and could be used to save activity log information to long term storage (instead of a streaming dataset).  Let us know what you're interested in, and that will help us tailor our future technical blog postings.  As always, if you have any issues, or would like to ask us any questions, please [reach out to us](mailto:cloud@proserveit.com?Subject=PowerBI%20Technical%20Question).
