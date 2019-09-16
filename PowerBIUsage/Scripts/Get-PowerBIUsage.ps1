@@ -70,7 +70,8 @@ function Push-ResultsToPowerBI( $powerBiEndpoint, $PowerBIEntries) {
         "DatasetName" = $entry.DatasetName
         "DashboardName" = $entry.DashboardName
         }
-        Invoke-RestMethod -Method Post -Uri "$powerBiEndpoint" -Body (ConvertTo-Json @($payload))
+        write-host "$($entry.CreationTime), $($entry.UserId), $($entry.Operation), $($entry.Workload), $($entry.Activity), $($entry.ReportName), $($entry.WorkgroupName), $($entry.DatasetName), $($entry.DashboardName)"
+        $response = Invoke-RestMethod -Method Post -Uri "$powerBiEndpoint" -Body (ConvertTo-Json @($payload))
     }
 }
 
