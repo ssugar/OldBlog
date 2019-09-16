@@ -121,7 +121,7 @@ To start, you'll need to "create a subscription" so the Management API will star
 
 #### Loop Script
 
-The code below will continue to look for available activity logs every 15 minutes and push them into to the streaming dataset.
+The code below will continue to look for available activity logs every 15 minutes and push the log entries into to the streaming dataset.
 
 ```` powershell
 while($true){
@@ -132,9 +132,23 @@ while($true){
 
 ### Create Power BI Report
 
-## Get Started with MS Power BI Today
-There are so many things MS Power BI can do to increase data visibility and improve decision making within your organization. So, let’s recap a few important points about why you need MS Power BI in your organization.
+At this point, you can start creating your Power BI report and answering some of the questions we had before.  As a start, let's look at what the most popular reports are:
 
-MS Power BI is data import, modeling, and visualization made easier.  It can be a self-service data visualization tool for your end-users, or we can help build reports and dashboards for you.  MS Power BI has desktop and mobile clients - even for Apple Watch - along with web-based dashboards and reports, making your data and KPIs easy to access from any device at any time.
+1. Create report
+   * A) Click on Datasets
+   * B) Click on Create report
 
-Simply put, MS Power BI is an extremely versatile Business Intelligence platform. If you want to learn more about how to take full advantage of MS Power BI, [drop us a line today](mailto:cloud@proserveit.com?Subject=I%20Want%20To%20Learn%20More%20About%20Power%20BI%20Solutions). Our team of Data & Analytics experts will be happy to schedule a demo or a tutorial session.
+![ReportStep1](images/Report-Method1Step1.png)
+
+2. Create visualization
+   * A) Click on the "Stacked bar chart" visualization
+   * B) Drag-and-drop Report Name into the Axis
+   * C) Drag-and-drop Operation into the Value (will become count of operation)
+
+![ReportStep2](images/Report-Method1Step2.png)
+
+With the above in place, we can see that our "Revenue by Sales Rep v3" report is our most popular report.  From there, we can add slicers and other visualizations or tables to continue to delve into our tenant's Power BI usage.
+
+## Thoughts and Next Steps
+
+This was a quick introduction to Azure AD Application authentication to the O365 Management Activity API, and to loading Power BI activity data into a Power BI streaming dataset.  With some work, this could be expanded to capture other O365 activity data (Exchange, Sharepoint, Teams, DLP, ...), and could be used to save activity log information to long term storage (instead of a streaming dataset).  Let us know what you're interested in, and that will help us tailor our future technical blog postings.  As always, if you have any issues, or would like to ask us any questions, please [reach out to us](mailto:cloud@proserveit.com?Subject=I%20Want%20To%20Learn%20More%20About%20Power%20BI%20Solutions).
