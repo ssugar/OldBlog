@@ -66,11 +66,11 @@ function Push-ResultsToPowerBI( $powerBiEndpoint, $PowerBIEntries) {
         "Workload" = $entry.Workload
         "Activity" = $entry.Activity
         "ReportName" = $entry.ReportName
-        "WorkgroupName" = $entry.WorkgroupName
+        "WorkSpaceName" = $entry.WorkSpaceName
         "DatasetName" = $entry.DatasetName
         "DashboardName" = $entry.DashboardName
         }
-        write-host "$($entry.CreationTime), $($entry.UserId), $($entry.Operation), $($entry.Workload), $($entry.Activity), $($entry.ReportName), $($entry.WorkgroupName), $($entry.DatasetName), $($entry.DashboardName)"
+        write-host "$($entry.CreationTime), $($entry.UserId), $($entry.Operation), $($entry.Workload), $($entry.Activity), $($entry.ReportName), $($entry.WorkSpaceName), $($entry.DatasetName), $($entry.DashboardName)"
         $response = Invoke-RestMethod -Method Post -Uri "$powerBiEndpoint" -Body (ConvertTo-Json @($payload))
     }
 }
@@ -103,7 +103,7 @@ if($lastendTime){
 write-host "Retrieving log entries from blob content created between $startTimeString and $endTimeString"
 
 $Entries = Get-AuditLogEntries -tenantId $tenantId -AccessToken $AccessToken -startTime $startTimeString -endTime $endTimeString
-$PowerBIEntries = $Entries | sort CreationTime | Where-Object{$_.Workload -like "PowerBI"} | Select-Object CreationTime, UserId, Operation, Workload, Activity, ReportName, WorkspaceName, DatasetName, DashboardName
+$PowerBIEntries = $Entries | sort CreationTime | Where-Object{$_.Workload -like "PowerBI"} | Select-Object CreationTime, UserId, Operation, Workload, Activity, ReportName, WorkSpaceName, DatasetName, DashboardName
 Push-ResultsToPowerBI -powerBiEndpoint $powerBiEndpoint -PowerBIEntries $PowerBIEntries
 if($passThru){ $PowerBIEntries }
 
