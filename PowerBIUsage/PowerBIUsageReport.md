@@ -1,12 +1,14 @@
-# Quick and Easy Power BI Usage Metrics across all WorkSpaces
+# Power BI Usage Metrics across all WorkSpaces
 ###### by [Scott Sugar](https://linkedin.com/in/scottsugar)
 
 ## Problem Statement
 "You can't manage what you can't measure".  So when it comes to managing your tenant's online Power BI service, how do you measure the usage of your reports, dashboards, and datasets?  Which reports are getting the most attention?  By who?  Are there unused reports or workspaces that could be cleaned up?
 
-The online PowerBI service does offer "Usage metrics" in the Admin portal, but it's not customizable or interactive, and seems to be more focused on "who has how many reports/dashboard" rather than the question I set out to answer "who's using the service, and what are they looking at?"
+There are Usage metrics at the report/dashboard level that can be saved, edited, and unfiltered to show usage across an entire workspace, but for organizations with more than a few workspaces, monitoring usage at the workspace level is not scalable and doesn't allow for a unified view of usage across the tenant.
 
-Power BI Built-In Usage Metrics:
+The online PowerBI service does offer Usage metrics in the Admin portal, but it's not customizable or interactive, and seems to be more focused on "who has how many reports/dashboard" rather than the question I set out to answer "who's using the service, and what are they looking at?"
+
+Power BI Built-In Usage Metrics in the Admin portal:
 ![UsageMetrics](images/powerbi-usagemetrics.png)
 
 ## Solution Walkthrough
