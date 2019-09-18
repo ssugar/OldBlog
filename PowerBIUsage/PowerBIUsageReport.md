@@ -1,8 +1,8 @@
-# Power BI Usage Report
+# Quick and Easy Power BI Usage Metrics across all WorkSpaces
 ###### by [Scott Sugar](https://linkedin.com/in/scottsugar)
 
 ## Problem Statement
-"You can't manage what you can't measure".  So when it comes to managing your tenant's online Power BI service, how do you measure the usage of your reports, dashboards, and datasets?  Which reports are getting the most attention?  By who?  Are there unused reports or workgroups that could be cleaned up?
+"You can't manage what you can't measure".  So when it comes to managing your tenant's online Power BI service, how do you measure the usage of your reports, dashboards, and datasets?  Which reports are getting the most attention?  By who?  Are there unused reports or workspaces that could be cleaned up?
 
 The online PowerBI service does offer "Usage metrics" in the Admin portal, but it's not customizable or interactive, and seems to be more focused on "who has how many reports/dashboard" rather than the question I set out to answer "who's using the service, and what are they looking at?"
 
@@ -13,6 +13,7 @@ Power BI Built-In Usage Metrics:
 
 ### Set up Pre-Requisites
 We have a few things we need to set up in order to get this solution working:
+* Azure AD Global Admin account
 * Azure AD Application - to help us authenticate to the O365 Management APIs
 * Power BI Streaming Dataset - to hold the Power BI activity logs
 
