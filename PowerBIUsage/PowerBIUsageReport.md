@@ -159,16 +159,3 @@ This was a quick introduction to Azure AD Application authentication to the O365
 With some work, this could be expanded to capture other O365 activity data (Exchange, Sharepoint, Teams, DLP, ...), and could be used to save activity log information to long term storage (instead of a streaming dataset).  
 
 Let us know what you're interested in, and that will help us tailor our future technical blog postings.  As always, if you have any issues, or would like to ask us any questions, please [reach out to us](mailto:cloud@proserveit.com?Subject=PowerBI%20Technical%20Question).
-
-<!--HubSpot Call-to-Action Code -->
-<span class="hs-cta-wrapper" id="hs-cta-wrapper-d123c573-228c-4604-9f7b-b6a320fd9f77">
-  <span class="hs-cta-node hs-cta-d123c573-228c-4604-9f7b-b6a320fd9f77" id="hs-cta-d123c573-228c-4604-9f7b-b6a320fd9f77">
-    <!--[if lte IE 8]><div id="hs-cta-ie-element"></div><![endif]-->
-    <a href="https://cta-redirect.hubspot.com/cta/redirect/5279291/d123c573-228c-4604-9f7b-b6a320fd9f77">
-      <img class="hs-cta-img" id="hs-cta-img-d123c573-228c-4604-9f7b-b6a320fd9f77" style="border-width:0px;" src="https://no-cache.hubspot.com/cta/default/5279291/d123c573-228c-4604-9f7b-b6a320fd9f77.png"  alt="Questions? Get Your Answers &gt;&gt;"/>
-    </a>
-  </span>
-  <script charset="utf-8" src="https://js.hscta.net/cta/current.js"></script>
-  <script type="text/javascript"> hbspt.cta.load(5279291, 'd123c573-228c-4604-9f7b-b6a320fd9f77', {}); </script>
-</span>
-<!-- end HubSpot Call-to-Action Code -->
