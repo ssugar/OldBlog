@@ -23,22 +23,22 @@ function Get-MgmtAccessToken($appId, $domain, $clientSecret) {
     return $AccessToken
 }
 function New-AuditLogSubscription( $tenantId, $AccessToken) {
-    $uri = "https://manage.office.com/api/1.0/$($tenantId)/activity/feed/subscriptions/start?contentType=Audit.General&PublisherIdentifier=$($tenantId)"
+    $uri = "https://manage.office.com/api/v1.0/$($tenantId)/activity/feed/subscriptions/start?contentType=Audit.General&PublisherIdentifier=$($tenantId)"
     $response = Invoke-RestMethod -Uri $uri -ContentType "application/x-www-form-urlencoded" -Headers @{'authorization'="Bearer $($AccessToken)"} -Method "POST"
     return $response
 }
 function Stop-AuditLogSubscription( $tenantId, $AccessToken) {
-    $uri = "https://manage.office.com/api/1.0/$($tenantId)/activity/feed/subscriptions/stop?contentType=Audit.General&PublisherIdentifier=$($tenantId)"
+    $uri = "https://manage.office.com/api/v1.0/$($tenantId)/activity/feed/subscriptions/stop?contentType=Audit.General&PublisherIdentifier=$($tenantId)"
     $response = Invoke-RestMethod -Uri $uri -ContentType "application/x-www-form-urlencoded" -Headers @{'authorization'="Bearer $($AccessToken)"} -Method "POST"
     return $response
 }
 function Get-AuditLogSubscriptions( $tenantId, $AccessToken) {
-    $uri = "https://manage.office.com/api/1.0/$($tenantId)/activity/feed/subscriptions/list?PublisherIdentifier=$($tenantId)"
+    $uri = "https://manage.office.com/api/v1.0/$($tenantId)/activity/feed/subscriptions/list?PublisherIdentifier=$($tenantId)"
     $response = Invoke-RestMethod -Uri $uri -ContentType "application/x-www-form-urlencoded" -Headers @{'authorization'="Bearer $($AccessToken)"} -Method "GET"
     return $response
 }
 function Get-AuditLogSubscriptionContent( $tenantId, $AccessToken, $startTime, $endTime ) {
-    $uri = "https://manage.office.com/api/1.0/$($tenantId)/activity/feed/subscriptions/content?contentType=Audit.General&startTime=$($startTime)&endTime=$($endTime)"
+    $uri = "https://manage.office.com/api/v1.0/$($tenantId)/activity/feed/subscriptions/content?contentType=Audit.General&startTime=$($startTime)&endTime=$($endTime)"
     $response = Invoke-RestMethod -Uri $uri -ContentType "application/x-www-form-urlencoded" -Headers @{'authorization'="Bearer $($AccessToken)"} -Method "GET"
     return $response
 }
@@ -69,8 +69,12 @@ function Push-ResultsToPowerBI( $powerBiEndpoint, $PowerBIEntries) {
         "WorkSpaceName" = $entry.WorkSpaceName
         "DatasetName" = $entry.DatasetName
         "DashboardName" = $entry.DashboardName
+        "UserAgent" = $entry.UserAgent
+        "ClientIP" = $entry.ClientIP
+        "DistributionMethod" = $entry.DistributionMethod
+        "ConsumptionMethod" = $entry.ConsumptionMethod
         }
-        write-host "$($entry.CreationTime), $($entry.UserId), $($entry.Operation), $($entry.Workload), $($entry.Activity), $($entry.ReportName), $($entry.WorkSpaceName), $($entry.DatasetName), $($entry.DashboardName)"
+        write-host "Pushing: $($entry.CreationTime), $($entry.UserId), $($entry.Operation), $($entry.Workload), $($entry.Activity), $($entry.ReportName), $($entry.WorkSpaceName), $($entry.DatasetName), $($entry.DashboardName)"
         $response = Invoke-RestMethod -Method Post -Uri "$powerBiEndpoint" -Body (ConvertTo-Json @($payload))
     }
 }
@@ -103,7 +107,7 @@ if($lastendTime){
 write-host "Retrieving log entries from blob content created between $startTimeString and $endTimeString"
 
 $Entries = Get-AuditLogEntries -tenantId $tenantId -AccessToken $AccessToken -startTime $startTimeString -endTime $endTimeString
-$PowerBIEntries = $Entries | sort CreationTime | Where-Object{$_.Workload -like "PowerBI"} | Select-Object CreationTime, UserId, Operation, Workload, Activity, ReportName, WorkSpaceName, DatasetName, DashboardName
+$PowerBIEntries = $Entries | sort CreationTime | Where-Object{$_.Workload -like "PowerBI"} | Select-Object CreationTime, UserId, Operation, Workload, Activity, ReportName, WorkSpaceName, DatasetName, DashboardName, UserAgent, ClientIP, DistributionMethod, ConsumptionMethod
 Push-ResultsToPowerBI -powerBiEndpoint $powerBiEndpoint -PowerBIEntries $PowerBIEntries
 if($passThru){ $PowerBIEntries }
 
