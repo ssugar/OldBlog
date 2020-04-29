@@ -1,9 +1,9 @@
 # MS Power BI Embedded - Creating a Custom .NET MVC App
 ###### by [Scott Sugar](https://linkedin.com/in/scottsugar)
 
-This is the first of a 3-part series on PowerBI Embedded.  This series is meant for a technical audience.  An executive-focused article on PowerBI Embedded can be found [here](./Embedded-exec.md).
+This is meant for a technical audience.  An executive-focused article on PowerBI Embedded can be found [here](./Embedded-exec.md).
 
-For this series, we'll be focused on the PowerBI Embedded A-Series (Azure) SKU, and we'll be using the "App Owns Data" model, which is the model that allows you to embed Power BI reports for your customers.  More information on this model can be found [here](https://docs.microsoft.com/en-us/power-bi/developer/embedding#embedding-for-your-customers).
+For this article, we'll be focused on the PowerBI Embedded A-Series (Azure) SKU, and we'll be using the "App Owns Data" model, which is the model that allows you to embed Power BI reports for your customers.  More information on this model can be found [here](https://docs.microsoft.com/en-us/power-bi/developer/embedding#embedding-for-your-customers).
 
 ### Requirements
 
@@ -60,10 +60,6 @@ To set up your Power BI embedding environment, go to: [https://app.powerbi.com/e
 
 If all goes well, you should now have a report embedded into a custom .NET MVC web application running on the localhost of your computer like in the image below:
 ![Success](images/success.png)
-
-### Up Next - Running the App in an Azure Web App and Setting up Authentication
-
-[Part 2](Embedded-tech-part2.md) will show us how to run this custom .NET MVC web app in an Azure Web App and setting up authentication, which will set us up nicely for part 3 of this series which will be about setting up Row Level Security.
 
 ### Get Started with MS Power BI Today
 There are so many things MS Power BI can do to increase data visibility and improve decision making within your organization. So, let’s recap a few important points about why you need MS Power BI in your organization.
