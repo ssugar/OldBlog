@@ -8,7 +8,7 @@
 * Dataflows
     * [Dataflows](Dataflows/Dataflows.md)
 * Excel and PowerBI
-    * [ExPbi](ExPbi/ExPbi.md)
+    * [Excel and Power BI: A Comparison](ExPbi/ExPbi.md)
 * PowerBI Usage Report
     * [PowerBI Usage Report](PowerBIUsage/PowerBIUsageReport.md)
 
