@@ -1,7 +1,7 @@
 # 101 - What is Power BI for?
 ###### by [Scott Sugar](https://linkedin.com/in/scottsugar)
 
-I recently spoke with a colleague that had completed a Power BI [Dashboard In A Day](https://powerbi.microsoft.com/en-us/diad/) course, and during their post-training research they ran into terms like Data Warehouse and Data Lake, and wondered how it all fit together.  The training course taught them how to build a dashboard in a day - connect into data, clean/transform it, visualize it, and publish it - all within Power BI.  So where did these other systems fit in?
+I recently spoke with a colleague that had completed a Power BI [Dashboard In A Day](https://powerbi.microsoft.com/en-us/diad/) course, and during their post-training research they ran into terms like [Data Warehouse](https://azure.microsoft.com/en-us/services/synapse-analytics/) and [Data Lake](https://azure.microsoft.com/en-us/solutions/data-lake/), and wondered how it all fit together.  The training course taught them how to build a dashboard in a day - connect into data, clean/transform it, visualize it, and publish it - all within Power BI.  So where did these other systems fit in?
 
 From there, we discussed what I find are the two ways to leverage Power BI
 1. A drag-and-drop reporting application that sits on top of other data systems
