@@ -3,18 +3,16 @@
 
 ## Opening Statement
 
-Prior to selecting a BI tool (PowerBI, Tableau, ...), you should think about your desired outcomes - you don't buy a hamer without a nail.  So what positive outcomes can come from a BI tool?  
+Two main ways to leverage Power BI:
+1. A drag-and-drop, low-to-no code visualization tool.
+2. A full end-to-end data analysis system.
 
-Microsoft gives us a number of points within their [what is Power BI page](https://powerbi.microsoft.com/en-us/what-is-power-bi/):
-* Connect to hundreds of data sources
-* Visualize your data 
-* Securely share insights across your organization
-* Securely embed reports in apps/websites
+Within the first way, you would also need to leverage a [Data Orchestration]() tool, possibly hydrate a [Data Lake](), [dimensionally model]() your data for loading into a [Data Warehouse](), pre-analyze and load your data into an [in-memory database](), and potentially integrate other [AI/ML]() systems - all in order to extract, clean, transform, and load your data such that Power BI simply sits on top providing you a nice way to create visualizations/reports and most importantly a *secure* way to share your reports with other users in your organization that integrates easily with other O365 systems ([SharePoint](), [Teams]()).  
 
-Tableau also has their [what is Tableau page](https://www.tableau.com/products/what-is-tableau) with a number of similar points:
-* From connection to collaboration
-* Turn data into insights that drive actions
-* Secure end-to-end analytics
+As for the second way to leverage Power BI - an end-to-end data analysis system. Power BI is fully capable of connecting directly into hundreds of data sources, cleaning and modeling that data with [M/Power Query](), creating complex relationships between those data sources, and even 
+
+
+
 
 
 
