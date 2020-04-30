@@ -1,7 +1,7 @@
 # Blog
 
 * 101 - Why Power BI?
-    * [101 - Why Power BI?](101/WhyPBI.md)
+    * [101 - What is Power BI for?](101/WhatIsPBIfor.md)
 * TopN and Other
     * [PowerBI TopN and Other](TopNAndOther/TopNAndOther.md)
 * PowerBI Embedded
