@@ -49,13 +49,18 @@ We have a few things we need to set up in order to get this solution working:
 
 ![Step4](images/AAD-Step4.png)
 
-5. Gather Application (client) ID, and Directory (tenant) ID
+5. Grant admin consent for your org
+   * A) Click "Grant admin consent for ..."
+
+![Step4a](images/AAD-Step4a.png)
+
+6. Gather Application (client) ID, and Directory (tenant) ID
    * A) Click Overview
    * B) Copy the Application ID and Directory ID into notepad for use later
 
 ![Step5](images/AAD-Step5.png)
 
-6. Create Client secret
+7. Create Client secret
    * A) Click Certificates and Secrets
    * B) Click New client secret
    * C) Enter a description
@@ -63,7 +68,7 @@ We have a few things we need to set up in order to get this solution working:
 
 ![Step6](images/AAD-Step6.png)
 
-7. Gather Client secret
+8. Gather Client secret
    * A) Copy the Client secret into notepad for use later
 
 ![Step7](images/AAD-Step7.png)
