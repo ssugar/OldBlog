@@ -49,7 +49,7 @@ We have a few things we need to set up in order to get this solution working:
 
 ![Step4](images/AAD-Step4.png)
 
-   1. Grant admin consent for your org
+   * You'll also need to Grant admin consent for your org
       * A) Click "Grant admin consent for ..."
 
 ![Step4a](images/AAD-Step4a.png)
