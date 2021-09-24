@@ -13,4 +13,6 @@
     * [Excel and Power BI: A Comparison](ExPbi/ExPbi.md)
 * PowerBI Usage Report
     * [PowerBI Usage Report](PowerBIUsage/PowerBIUsageReport.md)
+* Kafka-Connect Monitor and Auto-Heal
+    * [Kafka-Connect Monitor and Auto-Heal](kafka-connect/monitorAndAutoheal.md)
 
