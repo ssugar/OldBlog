@@ -15,4 +15,7 @@
     * [PowerBI Usage Report](PowerBIUsage/PowerBIUsageReport.md)
 * Kafka-Connect Monitor and Auto-Heal
     * [Kafka-Connect Monitor and Auto-Heal](kafka-connect/monitorAndAutoheal.md)
+* PowerBI Copilot
+    * [PowerBI Copilot on the Cheap](PowerBICopilot/PowerBI Copilot on the Cheap.md)
+
 
