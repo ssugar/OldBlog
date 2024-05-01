@@ -1,19 +1,25 @@
-# PowerBI Copilot on the Cheap
+# Copilot for PowerBI on the Cheap
+
+PowerBI Copilot offers a transformative experience for data analysis and visualization, providing users with advanced AI capabilities to enhance their Power BI usage. However, it's important to note that while Copilot can significantly boost productivity and insights, running high-capacity SKUs like the Fabric F64 capacity 24/7 can lead to substantial costs. 
 
 Leveraging the power of Azure Automation and PowerShell, you can efficiently manage your PowerBI Fabric F64 capacity to use with Copilot for Power BI without breaking the bank. This guide will walk you through the process of using an Azure Automation Runbook in conjunction with a local PowerShell script to start your Fabric F64 capacity for a set duration and then automatically stop it, ensuring you only pay for what you use.
 
-## Warning: Potential Cost Overages with F64 SKU
+The goal of this guide is to allow you to run a PowerShell script on your local machine which will start your F64 capacity for a set period of time of your choosing and then stop it without further intervention.  This **should** minimize the risks associated with a human forgetting to pause the F64 SKU after they are done using Copilot for Power BI.  
 
-**Caution:** The F64 SKU of PowerBI Fabric is a high-capacity offering that can incur significant costs, potentially amounting to thousands of dollars per month. While the automation scripts provided in this blog aim to help manage and minimize these costs, they are not infallible.
+Ideally this will open the door for individuals and small/medium businesses to be able to use Copilot for Power BI.
 
-**Use at Your Own Risk:** The approach outlined in this blog, including the Azure Automation Runbook and local PowerShell script, requires careful implementation and constant monitoring to avoid unintended charges. It is crucial to ensure that the scripts are functioning correctly and that the Fabric F64 capacity is not running longer than necessary.
+## :warning: Warning: Potential Cost Overages with F64 SKU
+
+:warning: **Caution:** The F64 SKU of PowerBI Fabric is a high-capacity offering that can incur significant costs, potentially amounting to thousands of dollars per month. While the automation scripts provided in this blog aim to help manage and minimize these costs, they are not infallible.
+
+:warning: **Use at Your Own Risk:** The approach outlined in this blog, including the Azure Automation Runbook and local PowerShell script, requires careful implementation and constant monitoring to avoid unintended charges. It is crucial to ensure that the scripts are functioning correctly and that the Fabric F64 capacity is not running longer than necessary.
 
 **Recommendations:**
 - Regularly review the Azure Automation Runbook's execution history to confirm that it starts and stops the capacity as expected.
 - Monitor your Azure billing closely to detect any anomalies or unexpected charges.
 - Consider implementing additional safeguards, such as budget alerts in Azure, to receive notifications when your spending approaches a predefined threshold.
 
-**Disclaimer:** The author of this blog and the code provided herein are not responsible for any financial impact related to the use of these scripts. Extreme caution is advised when automating the management of your Fabric F64 capacity. Always test thoroughly in a non-production environment before implementing in a live setting.
+:warning: **Disclaimer:** The author of this blog and the code provided herein are not responsible for any financial impact related to the use of these scripts. Extreme caution is advised when automating the management of your Fabric F64 capacity. Always test thoroughly in a non-production environment before implementing in a live setting.
 
 ## Prerequisites
 Before we dive into the setup, ensure you have the following:
@@ -148,7 +154,7 @@ To trigger the Runbook remotely, you'll need a webhook:
 4. Click **OK** and then **Create**.
 
 ## Step 5: Local PowerShell Script
-On your local machine, you'll have a PowerShell script that calls the webhook to start the Runbook.  Note the need to fill in the WebhootUri variable in the code below.  This Uri will come from Step 4.3 above.
+On your local machine, you'll have a PowerShell script that calls the webhook to start the Runbook.  Note the need to fill in the WebhookUri variable in the code below.  This Uri will come from Step 4.3 above.
 
 ```powershell
 param (
@@ -169,7 +175,7 @@ invoke-restmethod -Method POST -Uri $WebhookUri -Body $Body
 After setting up your Runbook and local script, test them to ensure they work as expected.  You can run the local PowerShell script using the following command (assuming you save the above local powershell script code as Run-PowerBICopilotForXMinutes.ps1)
 
 ```powershell
-.\Run-PowerBICopilotForXMinutes.ps1 -minutesToRun 4
+.\Run-PowerBICopilotForXMinutes.ps1 -minutesToRun 5
 ```
 
 By following these steps, you can create a cost-effective solution for managing your PowerBI Fabric F64 capacity, ensuring you're only paying for the resources you need when you need them.
