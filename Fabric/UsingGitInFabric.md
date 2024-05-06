@@ -2,6 +2,8 @@
 
 When working in Microsoft Fabric Notebooks, sometimes it can become necessary to clone a repository for use in the notebook.  One example of this necessity is when working with DBT packages for data transformation.
 
+Inspiration for this article came from [here](https://community.fabric.microsoft.com/t5/General-Discussion/Assistance-Required-Git-Not-Installed-on-Runtime-1-2-for-Code/m-p/3532740#M2175%3Ftrk=article-ssr-frontend-pulse_little-text-block).  The instructions there have been cleaned up for easier consumption in this article.
+
 ## How to setup git in Microsoft Fabric Notebooks
 
 ### 1. Ensure your workspace is using Runtime 1.2
