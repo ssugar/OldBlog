@@ -14,7 +14,7 @@ When working in Microsoft Fabric Notebooks, sometimes it can become necessary to
 5. In the "Runtime Version" dropdown, select "1.2 (Spark 3.4, Delta 2.4)"
 6. Click "Save"
 
-![Update Runtime](./updateRuntime.png)
+![UpdateRuntime](./updateRuntime.png)
 
 ## Create a .yml file
 
