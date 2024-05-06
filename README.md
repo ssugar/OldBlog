@@ -17,5 +17,7 @@
     * [Kafka-Connect Monitor and Auto-Heal](kafka-connect/monitorAndAutoheal.md)
 * PowerBI Copilot
     * [PowerBI Copilot on the Cheap](PowerBICopilot/PowerBI%20Copilot%20on%20the%20Cheap.md)
+* Fabric
+    * [Git in Fabric Notebooks](Fabric/UsingGitInFabric.md)
 
 
