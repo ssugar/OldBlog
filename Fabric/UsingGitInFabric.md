@@ -1,4 +1,3 @@
-```markdown
 ### Using Git in Microsoft Fabric Notebooks
 
 When working in Microsoft Fabric Notebooks, sometimes it can become necessary to clone a repository for use in the notebook.  One example of this necessity is when working with DBT packages for data transformation.
