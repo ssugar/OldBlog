@@ -31,7 +31,7 @@ dbt --version
 ```markdown
 %%bash
 git clone https://github.com/dbt-labs/jaffle-shop-classic/
-```markdown
+```
 
 
 ## **Step 3: Setting Up the `dbt-fabric` Adapter**
@@ -78,6 +78,7 @@ SECRET = mssparkutils.credentials.getSecret("https://KEYVAULTNAME.vault.azure.ne
 cd jaffle-shop-classic
 dbt debug --profile jaffle_shop
 ```
+
 ![dbtDebug](./dbtDebug.png)
 
 ## **Step 5: Seed the Fabric Warehouse with data**
@@ -87,6 +88,7 @@ dbt debug --profile jaffle_shop
 cd jaffle-shop-classic/
 dbt seed --profile jaffle_shop
 ```
+
 ![dbtSeed](./dbtSeed.png)
 
 ## **Step 6: Running the DBT Package**
