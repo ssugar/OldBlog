@@ -128,4 +128,4 @@ Output should look like this:
 
 ## **Conclusion**
 
-By running DBT inside a Fabric Notebook with the `dbt-fabric` adapter, you centralize your data transformation process, enhance security with Azure KeyVault, and improve collaboration by eliminating the need for a local development environment. The `jaffle-shop-classic` repository's compatibility with Fabric Warehouse ensures a smooth and efficient workflow to test DBT in Fabric.
+By running DBT inside a Fabric Notebook with the `dbt-fabric` adapter, you centralize your data transformation process, enhance security with Azure KeyVault, and improve collaboration by eliminating the need for local development environments. The `jaffle-shop-classic` repository's compatibility with Fabric Warehouse ensures a smooth and efficient workflow to test DBT in Fabric.
