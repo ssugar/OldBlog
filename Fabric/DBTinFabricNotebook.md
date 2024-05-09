@@ -13,7 +13,7 @@ You'll need:
 4. A Fabric Warehouse
 5. A Fabric Notebook
 
-## **Step 1: Install dbt-Fabric**
+## **Step 1: Install dbt-Fabric into your Fabric Notebook**
 
 This command installs the dbt-fabric adapter:
 
@@ -36,6 +36,7 @@ dbt --version
 git clone https://github.com/dbt-labs/jaffle-shop-classic/
 ```
 
+*Note this will only work if you've followed the instructions at [Using Git in Fabric](./UsingGitInFabric.md)*
 
 ## **Step 3: Setting Up the `dbt-fabric` Adapter**
 
