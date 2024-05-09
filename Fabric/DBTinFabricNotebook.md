@@ -79,6 +79,8 @@ cd jaffle-shop-classic
 dbt debug --profile jaffle_shop
 ```
 
+Output should look like this:
+
 ![dbtDebug](./dbtDebug.png)
 
 ## **Step 5: Seed the Fabric Warehouse with data**
@@ -88,6 +90,8 @@ dbt debug --profile jaffle_shop
 cd jaffle-shop-classic/
 dbt seed --profile jaffle_shop
 ```
+
+Output should look like this:
 
 ![dbtSeed](./dbtSeed.png)
 
@@ -102,6 +106,8 @@ dbt run --profile jaffle_shop
 ```
 
 This will run all the models, tests, and snapshots defined in your DBT project, leveraging the power of the Fabric Warehouse for your data transformations.
+
+Output should look like this:
 
 ![dbtRun](./dbtRun.png)
 
