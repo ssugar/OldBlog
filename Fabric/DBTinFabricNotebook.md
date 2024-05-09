@@ -1,14 +1,17 @@
 # Running DBT with the dbt-fabric Adapter in a Fabric Notebook
 
-Transforming your data warehouse just got easier with the ability to run DBT (Data Build Tool) completely inside a Fabric Notebook. This guide will walk you through the process using the `jaffle-shop-classic` GitHub repository and connecting to a Fabric Warehouse using the `dbt-fabric` adapter.  We will be using the `jaffle-shop-classic` repository instead of the newer `jaffle-shop` repository as the classic version does not have warehouse specific macros which result in errors with the `dbt-fabric` adapter
+Transforming your data warehouse just got easier with the ability to run DBT (Data Build Tool) completely inside a Fabric Notebook. This guide will walk you through the process using the `jaffle-shop-classic` GitHub repository and connecting to a Fabric Warehouse using the `dbt-fabric` adapter.  
+
+We will be using the `jaffle-shop-classic` repository instead of the newer `jaffle-shop` repository as the classic version does not have warehouse specific macros which result in errors with the `dbt-fabric` adapter
 
 ## **Prerequisites**
 
 You'll need:
-1. An Azure Key Vault - the user running the notebook will need access to GET secrets
-2. Git Installed in a Fabric Workspace - see [Using Git in Fabric](./UsingGitInFabric.md)
-3. A Fabric Warehouse
-4. A Fabric Notebook
+1. An MS Entra App (service principal) with Contributor permissions on a Fabric Workspace 
+2. An Azure Key Vault - the user running the notebook will need access to GET secrets
+3. Git Installed in the same Fabric Workspace - see [Using Git in Fabric](./UsingGitInFabric.md)
+4. A Fabric Warehouse
+5. A Fabric Notebook
 
 ## **Step 1: Install dbt-Fabric**
 
@@ -56,7 +59,18 @@ echo '      threads: 4'  >> ./profiles.yml
 echo '      type: fabric'  >> ./profiles.yml
 ```
 
-Above sets up the basics of a dbt-fabric connection, next you'll add in your Fabric host (AKA SQL Connection String), database (Name of your Fabric Warehouse), and your MS Entra App (service principal) details:  tenant_id, client_id and client_secret.  Make sure to replace KEYVAULTNAME with the name of your Azure Key Vault.  We will retrieve all of these details from an Azure Key Vault to keep them secure.
+Above sets up the basics of a dbt-fabric connection.  
+
+Next you'll add in your Fabric:
+* host (AKA SQL Connection String) - kept in a secret named fabric-host
+* database (Name of your Fabric Warehouse) - kept in a secret named fabric-database
+
+And your MS Entra App (service principal) details:  
+* tenant_id - kept in a secret named aad-tenant
+* client_id - kept in a secret named aad-client
+* client_secret - kept in a secret named aad-secret
+
+Make sure to replace KEYVAULTNAME with the name of your Azure Key Vault.  We will retrieve all of these details from an Azure Key Vault to keep them secure.
 
 ```markdown
 HOST = mssparkutils.credentials.getSecret("https://KEYVAULTNAME.vault.azure.net/","fabric-host")
