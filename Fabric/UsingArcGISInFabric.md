@@ -3,7 +3,7 @@
 ## Introduction
 In this article, we'll explore the process of installing the ArcGIS Python module in a Fabric notebook. We'll first look at a common mistake made during installation and then provide the correct method to ensure a smooth setup.
 
-:warning: Please note that this won't give you 100% of the functionality of the arcgis python module, but will allow you to upload tables/shapefiles, publish feature sets, change owners and a number of other administrative & data related tasks.
+:warning: Please note that this won't give you 100% of the functionality of the ArcGIS python module, but will allow you to upload tables/shapefiles, publish feature sets, change owners and a number of other administrative & data related tasks.
 
 ## Common Mistake: Incorrect Installation Method
 You might be tempted to install the ArcGIS module directly using `pip` in your Fabric notebook like this:
@@ -12,16 +12,16 @@ You might be tempted to install the ArcGIS module directly using `pip` in your F
 %pip install arcgis
 ```
 
-Doing the above will result in a number of errors when installing various dependencies and if you then try to test your installation of the arcgis module, you'll see the module didn't install
+Doing the above will result in a number of errors when installing various dependencies and if you then try to test your installation of the ArcGIS module, you'll see the module didn't install
 
 ```python
 import arcgis
 ```
 
-[noModuleFound](./arcgisNoModuleFound.png)
+![noModuleFound](./arcgisNoModuleFound.png)
 
 ## Correct Installation Method
-This method will install the arcgis python module with it's --no-deps option which doesn't force pip to try and install all it's dependencies.  You'll also manually install all the core required dependencies.
+This method will install the ArcGIS python module with it's --no-deps option which doesn't force pip to try and install all it's dependencies.  You'll also manually install all the core required dependencies.
 
 ```python
 %pip install ujson
@@ -44,13 +44,13 @@ This method will install the arcgis python module with it's --no-deps option whi
 ```
 
 ## Test Your Install
-The following commands will import the installed arcgis module and pring the installed version number.
+The following commands will import the installed ArcGIS module and print the installed version number.
 
 ```python
 import arcgis
 print(arcgis.__version__)
 ```
-[installed](./arcgisInstalled.png)
+![installed](./arcgisInstalled.png)
 
 ## Conclusion
 By following the correct method outlined above, you can install the ArcGIS Python module in your Fabric notebook without any issues.
