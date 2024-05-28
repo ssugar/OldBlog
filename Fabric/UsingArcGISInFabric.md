@@ -12,7 +12,7 @@ You might be tempted to install the ArcGIS module directly using `pip` in your F
 %pip install arcgis
 ```
 
-Doing the above will result in a number of errors when installing various dependencies and if you then try to test your installation of the ArcGIS module, you'll see the module didn't install
+Doing the above will result in a number of errors when installing various dependencies and if you then try to test your installation of the ArcGIS module, you'll see the module didn't install resulting in a ModuleNotFoundError: No module named 'arcgis' error when importing.
 
 ```python
 import arcgis
