@@ -22,7 +22,7 @@ import arcgis
 ![noModuleFound](./arcgisNoModuleFound.png)
 
 ## Correct Installation Method
-This method will install the ArcGIS python module with it's --no-deps option which doesn't force pip to try and install all it's dependencies.  You'll also manually install all the core required dependencies.
+This method will install the ArcGIS python module with its --no-deps option which doesn't force pip to try and install all its dependencies.  You'll also manually install all the core required dependencies.
 
 ```python
 %pip install ujson
