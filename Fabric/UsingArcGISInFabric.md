@@ -3,7 +3,8 @@
 ## Introduction
 In this article, we'll explore the process of installing the ArcGIS Python module in a Fabric notebook. We'll first look at a common mistake made during installation and then provide the correct method to ensure a smooth setup.
 
-:warning: Please note that this won't give you 100% of the functionality of the ArcGIS python module, but will allow you to upload tables/shapefiles, publish feature sets, change owners and a number of other administrative & data related tasks.
+> [!NOTE]
+> Please note that this won't give you 100% of the functionality of the ArcGIS python module, but will allow you to upload tables/shapefiles, publish feature sets, change owners and a number of other administrative & data related tasks.
 
 ## Common Mistake: Incorrect Installation Method
 You might be tempted to install the ArcGIS module directly using `pip` in your Fabric notebook like this:
