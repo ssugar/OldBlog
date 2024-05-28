@@ -20,5 +20,7 @@
 * Fabric
     * [Git in Fabric Notebooks](Fabric/UsingGitInFabric.md)
     * [DBT in Fabric Notebooks](Fabric/DBTinFabricNotebook.md)
+    * [ArcGIS in Fabric Notebooks](Fabric/UsingArcGISInFabric.md)
+
 
 
